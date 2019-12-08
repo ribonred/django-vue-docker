@@ -10,6 +10,6 @@ See [Configuration Reference](https://phoenixnap.com/kb/how-to-install-docker-on
 ```
 sudo docker-commpose up --build
 ```
-#### service access
-> 127.0.0.1:8000  *django server
-> 127.0.0.1:5000  *Frontend server
+### service access
+>##### 127.0.0.1:8000  *django server
+>##### 127.0.0.1:5000  *Frontend server
