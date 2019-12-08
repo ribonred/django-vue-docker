@@ -1,0 +1,25 @@
+version: '3'
+volumes:
+  pgdata:
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./laundry:/laundry
+    ports:
+      - "8000:8000"
+  vue:
+    build: .
+    environment:
+      - HOST=0.0.0.0
+      - PORT=5000
+    command:
+      bash -c "npm run serve"
+    volumes:
+      - ./laundry:/laundry
+    ports:
+      - "5000:5000"
+    depends_on:
+      - web
+  
