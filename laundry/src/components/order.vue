@@ -63,8 +63,8 @@ var toastrConfigs = {
   hideMethod: "bounceOutLeft"
 };
 Vue.use(CxltToastr, toastrConfigs);
-const url = "http://127.0.0.1:8000pelanggan/";
-const orderurl = "http://127.0.0.1:8000orders/";
+const url = "http://127.0.0.1:8000/pelanggan/";
+const orderurl = "http://127.0.0.1:8000/orders/";
 export default {
   data() {
     return {
